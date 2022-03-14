@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>For Loop</title>
+  </head>
+  <body>
+    <script>
+      // perulangan
+
+      for (let counter = 10; counter >= 1; counter--) {
+        document.writeln(`<p>Perulangan yang di ulang ${counter}</p>`);
+      }
+
+      let start = 10;
+      for (let a = start; a > 0; a--) {
+        for (let b = start; b >= a; b--) {
+          document.writeln(`*`);
+        }
+        document.writeln(`<br>`);
+      }
+
+      for (let bintang = 0; bintang < 10; bintang++) {
+        for (let Bbintang = 0; Bbintang <= bintang; Bbintang++) {
+          document.writeln(`1`);
+        }
+        document.writeln(`<br>`);
+      }
+
+      for (let one = 1; one <= 10; one++) {
+        if (one <= 5) {
+          document.writeln(`Nama Saya ${one} `);
+        }
+      }
+    </script>
+  </body>
+</html>
