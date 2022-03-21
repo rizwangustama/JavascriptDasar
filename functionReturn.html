@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+
+  //   function sayHello(namaDepan, namaBelakang){
+  //     const hello = `Selamat Datang ${namaDepan} ${namaBelakang}`;
+  //     return hello;
+  //   }
+
+  //  const result = sayHello("Rizwan", "Gustama");
+  //  document.writeln(`<p>${result}</p>`);
+
+   function pertambahan( angka1, angka2) {
+     const tambah = angka1 + angka2;
+     return tambah;
+   }
+
+   const angka1 = 2;
+   const angka2 = 3;
+
+   const a = pertambahan(angka1, angka2);
+   document.writeln(`<h1>hasilnya adalah ${a}</h1`);
+
+    function nilaiAkhir(nilai){
+      if( nilai > 90) {
+        return "A";
+      } else if( nilai > 80){
+        return "B";
+      } else if(nilai > 70){
+        return "C";
+      } else{
+        return "D";
+      }
+    }
+
+    const nilaiku = 91;
+
+    const AkhirNilai = nilaiAkhir(nilaiku);
+    document.writeln(`<h1>Maka Hasil Finalnya Adalah <b style="color: red;">${AkhirNilai}</b></h1>`);
+
+  </script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Break And Continue</title>
+  </head>
+  <body>
+    <script>
+      let a = 1;
+      while (true) {
+        document.writeln(`Ini Adalah Baris Ke - ${a}<br>`);
+        a++;
+        if (a > 10) {
+          break;
+        }
+      }
+
+      for (let counter = 1; counter <= 100; counter++) {
+        if (counter % 2 === 1) {
+          continue;
+        }
+        document.writeln(`Perulangan ${counter}<br>`);
+      }
+    </script>
+  </body>
+</html>
