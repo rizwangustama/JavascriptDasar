@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ForIn</title>
+</head>
+<body>
+  <script>
+    const person = {
+      fistName : "Rizwan",
+      middleName: "Gustama",
+      lastName : "Iko"
+    }
+
+    for( property in person ) {
+      document.writeln(`<p>${property} : ${person[property]}</p>`)
+    }
+  </script>
+</body>
+</html>
