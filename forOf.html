@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>For Of</title>
+</head>
+<body>
+  <script>
+
+  // for of
+  // melakukan iterasi terhadap velue iterable object seperti array string dll.
+  const nama = ["Rizwan", "Gustama", "Iko"];
+  for (const namas of nama) {
+    document.writeln(`<p>${namas}</p>`);
+  }
+  // Maka Hasil dari kode yang di atas
+  // Rizwan
+  // Gustama
+  // Iko
+
+  const nameStrings = "Rizwan Gustama";
+  for (const namesku of nameStrings) {
+    document.writeln(`<p>${namesku}</p>`)
+  }
+  // untuk keluaran nya adalah
+  // R
+  // i
+  // z
+  // w
+  // a
+  // n
+
+  // G
+  // u
+  // s
+  // t
+  // a
+  // m
+  // a
+
+  const object = {
+    firstName : "Rizwan",
+    lastName : "Gustama",
+  }
+
+  for( objects of object ) {
+    document.writeln(`<p>${objects}</p>`)
+  }
+
+  // hasil yang akan ditambpilka adalah
+  // akan error
+  // forOf.html:48 Uncaught TypeError: object is not iterable at forOf.html:48:19
+
+  </script>
+</body>
+</html>
